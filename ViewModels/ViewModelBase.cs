@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using ReactiveUI;
-
-namespace TransactionUI.ViewModels
+﻿namespace TransactionUI.ViewModels
 {
+    using ReactiveUI;
+
     public class ViewModelBase : ReactiveObject
     {
     }

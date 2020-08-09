@@ -1,9 +1,9 @@
-using Avalonia;
-using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
-
 namespace TransactionUI.Views
 {
+    using Avalonia;
+    using Avalonia.Controls;
+    using Avalonia.Markup.Xaml;
+
     public class MainWindow : Window
     {
         public MainWindow()

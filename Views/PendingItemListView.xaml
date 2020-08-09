@@ -19,7 +19,7 @@
         <StackPanel Grid.Column="1" Grid.Row="1">
             <Button Content="A Button"/>
             <Button Content="A Button"/>
-            <Button Content="Add New" Command="{Binding $parent[Window].DataContext.AddItem}"/>
+            <Button Content="Add New" Command="{Binding AddItemCommand}"/>
             <Button Content="A Button"/>
         </StackPanel>
         <ItemsControl Grid.Column="2" Grid.Row="1" Items="{Binding Items}">
@@ -27,7 +27,7 @@
                 <DataTemplate>
                     <DockPanel>
                         <Button Content="Action"></Button>
-                        <Button Content="Trash"></Button>
+                        <Button Content="Trash" Command="{Binding $parent[UserControl].DataContext.RemoveItemCommand}" CommandParameter="{Binding}"></Button>
                         <TextBox Text="{Binding Name}"></TextBox>
                     </DockPanel>
                 </DataTemplate>

@@ -1,9 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using TransactionUI.Models;
-
 namespace TransactionUI.Services
 {
+    using System.Collections;
+    using System.Collections.Generic;
+    using TransactionUI.Models;
+
     public class Database
     {
         public IEnumerable<PendingItem> GetPendingItems() => new[]
